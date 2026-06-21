@@ -1,0 +1,12 @@
+'''Exercício de fixação 2: Crie um programa que peça ao usuário cinco números e informe qual é o menor e qual é o maior deles.'''
+
+menorNum = 100000000
+maiorNum = -100000000
+
+for i in range(5):
+    num = int(input("Digite cinco números para saber qual o maior e o menor entre eles:"))
+    if num < menorNum:
+        menorNum = num
+    if num > maiorNum:
+        maiorNum = num
+print("O maior número é:", maiorNum, "e o menor número é:", menorNum,)
